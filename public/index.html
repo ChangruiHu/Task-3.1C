@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Registration</h1>
+        <h2>Create an iService account</h2>
+        <form action="/sign_up" method="post">              
+            <p>Country of residence*</p>
+            <select id="country" name="country">
+                <option value="" disabled selected>Choose from list..</option>
+                <option>United States</option>
+                <option>Australia</option>
+                <option>Spain</option>
+                <option>India</option>
+                <option>Japan</option>
+                <option>China</option>
+            </select>
+            <p>First name*</p>
+            <input type="text" id="firstName" name="firstName" required>
+            <p>Last name*</p>
+            <input type="text" id="lastName" name="lastName" required>
+            <p>Email*</p>
+            <input type="email" id="email" name="email" required>
+            <p>Password*</p>
+            <input type="password" id="password" name="password" required>
+            <p>Confirm Password*</p>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <p>Address*</p>
+            <input type="text" id="addressLine1" name="addressLine1" required><br><br>
+            <input type="text" id="addressLine2" name="addressLine2">
+            <p>City*</p>
+            <input type="text" id="city" name="city" required>
+            <p>State, Province or Region*</p>
+            <input type="text" id="state" name="state" required>
+            <p>ZIP / Postal Code</p>
+            <input type="text" id="zipcode" name="zipcode">
+            <p>Mobile phone number</p>
+            <input type="text" id="phone" name="phone"><br><br>
+            <input type="submit" id="submitBtn" name="submitBtn" value="Create Account" />
+        </form> 
+    </div>
+</body>
+</html>
